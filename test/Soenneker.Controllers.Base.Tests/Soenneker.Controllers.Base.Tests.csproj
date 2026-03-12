@@ -27,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Controllers.Base.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Controllers.Base\Soenneker.Controllers.Base.csproj" />
     </ItemGroup>
 
     <ItemGroup>
