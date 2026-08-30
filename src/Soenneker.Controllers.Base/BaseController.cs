@@ -4,11 +4,14 @@ using Microsoft.AspNetCore.Mvc;
 namespace Soenneker.Controllers.Base;
 
 /// <summary>
-/// A derivative of ControllerBase, an abstract .NET API controller
+/// Provides an ASP.NET Core <see cref="ControllerBase"/> with protected access to application configuration.
 /// </summary>
 public abstract class BaseController : ControllerBase
 {
-    protected IConfiguration Config { get; private set; }
+    /// <summary>
+    /// Gets the application configuration supplied to the controller.
+    /// </summary>
+    protected IConfiguration Config { get; }
 
     protected BaseController(IConfiguration config)
     {
